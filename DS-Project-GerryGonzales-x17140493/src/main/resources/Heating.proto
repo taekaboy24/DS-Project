@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.DS.gerryproject.SmartFarmingGRPC";
+option java_outer_classname = "HeatingServiceImpl";
+
+package SmartFarmingGRPC;
+
+service HeatingService {
+  rpc initialAppliance(Empty) returns (heatingResponse) {}
+  
+  rpc changeTemperature(valueRequest) returns (stream valueResponse) {}
+  
+  rpc changeFan(valueRequest) returns (stream valueResponse) {}
+  
+  rpc onOff(booleanRequest) returns (booleanResponse) {}
+  
+  rpc changeApplianceName(stringRequest) returns (stringResponse) {}	
+
+}
+
+message Empty {
+
+}
+
+message stringRequest {
+	string text = 1;
+}
+
+message stringResponse {
+	string text = 1;
+}
+
+message booleanRequest {
+	bool msg = 2;
+}
+
+message booleanResponse {
+	bool msg = 2;
+}
+
+message valueRequest {
+  int32 length = 3;
+}
+
+message valueResponse {
+  int32 length = 3;
+}
+
+message heatingResponse {
+	string aname = 4;
+	string status = 5;
+	int32 temperature = 6;
+	int32 fan = 7;
+}
