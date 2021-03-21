@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.DS.gerryproject.SmartFarmingGRPC";
+option java_outer_classname = "LightServiceImpl";
+
+package SmartFarmingGRPC;
+
+service LightService {
+  rpc initialAppliance(Empty) returns (lightResponse) {}
+  
+  rpc changeBrightness(valueRequest) returns (stream valueResponse) {}
+  
+  rpc onOff(booleanRequest) returns (booleanResponse) {}
+  
+  rpc changeApplianceName(stringRequest) returns (stringResponse) {}	
+
+}
+
+message Empty {
+
+}
+
+message stringRequest {
+	string text = 1;
+}
+
+message stringResponse {
+	string text = 1;
+}
+
+message booleanRequest {
+	bool msg = 2;
+}
+
+message booleanResponse {
+	bool msg = 2;
+}
+
+message valueRequest {
+  int32 length = 3;
+}
+
+message valueResponse {
+  int32 length = 3;
+}
+
+message lightResponse {
+	string aname = 4;
+	string status = 5;
+	int32 brightness = 6;
+}
