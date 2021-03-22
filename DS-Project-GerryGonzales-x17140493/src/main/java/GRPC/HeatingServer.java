@@ -32,7 +32,7 @@ public class HeatingServer extends HeatingServiceImplBase{
 	public Heating myHeating = new Heating();
 	public static int heatingPort;
 	
-	private static class SampleListener implements ServiceListener {
+	private static class SampleListener implements ServiceListener {//start class
 
 		public void serviceAdded(ServiceEvent event) {
 			System.out.println("Service added: " + event.getInfo());
