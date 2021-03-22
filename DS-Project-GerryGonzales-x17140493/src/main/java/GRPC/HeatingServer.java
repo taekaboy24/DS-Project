@@ -66,7 +66,7 @@ public class HeatingServer extends HeatingServiceImplBase{
 			}
 
 		}
-	}
+	}//end method
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		startDiscovery();
