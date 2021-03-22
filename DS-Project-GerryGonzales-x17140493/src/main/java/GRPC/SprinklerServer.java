@@ -35,7 +35,7 @@ public class SprinklerServer extends SprinklerServiceImplBase{
 	public Sprinkler mySprinkler = new Sprinkler();
 	public static int sprinklerPort;
 	
-	private static class SampleListener implements ServiceListener {
+	private static class SampleListener implements ServiceListener {//start class
 		 
 		public void serviceAdded(ServiceEvent event) {
 			System.out.println("Service added: " + event.getInfo());
