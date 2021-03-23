@@ -159,14 +159,14 @@ public class Main {
 	
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.PINK);
+		frame.getContentPane().setBackground(Color.Green);
 		frame.setBounds(100, 100, 468, 525);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 
 		/*Heading Label*/
-		JLabel headLabel = new JLabel("Smart Building");
+		JLabel headLabel = new JLabel("Smart Farming");
 		headLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
 		headLabel.setBounds(101, 11, 245, 14);
 		frame.getContentPane().add(headLabel);

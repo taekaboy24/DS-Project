@@ -24,7 +24,7 @@ public final class SecuritycameraServiceGrpc {
 
   private SecuritycameraServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "SmartBuildingGRPC.SecuritycameraService";
+  public static final String SERVICE_NAME = "SmartFarmingGRPC.SecuritycameraService";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Empty,
@@ -45,7 +45,7 @@ public final class SecuritycameraServiceGrpc {
               io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Empty, org.DS.gerryproject.SmartFarmingGRPC.cameraResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "SmartBuildingGRPC.SecuritycameraService", "initialAppliance"))
+                  "SmartFarmingGRPC.SecuritycameraService", "initialAppliance"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   org.DS.gerryproject.SmartFarmingGRPC.Empty.getDefaultInstance()))
@@ -77,7 +77,7 @@ public final class SecuritycameraServiceGrpc {
               io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "SmartBuildingGRPC.SecuritycameraService", "changeCamera"))
+                  "SmartFarmingGRPC.SecuritycameraService", "changeCamera"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   org.DS.gerryproject.SmartFarmingGRPC.stringRequest.getDefaultInstance()))
@@ -109,7 +109,7 @@ public final class SecuritycameraServiceGrpc {
               io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.valueRequest, org.DS.gerryproject.SmartFarmingGRPC.valueResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "SmartBuildingGRPC.SecuritycameraService", "changeVolume"))
+                  "SmartFarmingGRPC.SecuritycameraService", "changeVolume"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   org.DS.gerryproject.SmartFarmingGRPC.valueRequest.getDefaultInstance()))
@@ -141,7 +141,7 @@ public final class SecuritycameraServiceGrpc {
               io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.booleanRequest, org.DS.gerryproject.SmartFarmingGRPC.booleanResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "SmartBuildingGRPC.SecuritycameraService", "onOff"))
+                  "SmartFarmingGRPC.SecuritycameraService", "onOff"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   org.DS.gerryproject.SmartFarmingGRPC.booleanRequest.getDefaultInstance()))
@@ -173,7 +173,7 @@ public final class SecuritycameraServiceGrpc {
               io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "SmartBuildingGRPC.SecuritycameraService", "changeApplianceName"))
+                  "SmartFarmingGRPC.SecuritycameraService", "changeApplianceName"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   org.DS.gerryproject.SmartFarmingGRPC.stringRequest.getDefaultInstance()))

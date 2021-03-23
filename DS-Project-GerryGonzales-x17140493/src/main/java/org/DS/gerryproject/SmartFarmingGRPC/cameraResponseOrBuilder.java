@@ -4,7 +4,7 @@
 package org.DS.gerryproject.SmartFarmingGRPC;
 
 public interface cameraResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:SmartBuildingGRPC.cameraResponse)
+    // @@protoc_insertion_point(interface_extends:SmartFarmingGRPC.cameraResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
