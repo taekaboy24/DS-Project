@@ -24,33 +24,33 @@ public final class SecuritycameraServiceGrpc {
 
   private SecuritycameraServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService";
+  public static final String SERVICE_NAME = "SmartBuildingGRPC.SecuritycameraService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> getInitialApplianceMethod;
+  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Empty,
+      org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> getInitialApplianceMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "initialAppliance",
-      requestType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty.class,
-      responseType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse.class,
+      requestType = org.DS.gerryproject.SmartFarmingGRPC.Empty.class,
+      responseType = org.DS.gerryproject.SmartFarmingGRPC.cameraResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> getInitialApplianceMethod() {
-    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> getInitialApplianceMethod;
+  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Empty,
+      org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> getInitialApplianceMethod() {
+    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Empty, org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> getInitialApplianceMethod;
     if ((getInitialApplianceMethod = SecuritycameraServiceGrpc.getInitialApplianceMethod) == null) {
       synchronized (SecuritycameraServiceGrpc.class) {
         if ((getInitialApplianceMethod = SecuritycameraServiceGrpc.getInitialApplianceMethod) == null) {
           SecuritycameraServiceGrpc.getInitialApplianceMethod = getInitialApplianceMethod = 
-              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse>newBuilder()
+              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Empty, org.DS.gerryproject.SmartFarmingGRPC.cameraResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService", "initialAppliance"))
+                  "SmartBuildingGRPC.SecuritycameraService", "initialAppliance"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.cameraResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SecuritycameraServiceMethodDescriptorSupplier("initialAppliance"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class SecuritycameraServiceGrpc {
      return getInitialApplianceMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeCameraMethod;
+  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeCameraMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "changeCamera",
-      requestType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest.class,
-      responseType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse.class,
+      requestType = org.DS.gerryproject.SmartFarmingGRPC.stringRequest.class,
+      responseType = org.DS.gerryproject.SmartFarmingGRPC.stringResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeCameraMethod() {
-    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeCameraMethod;
+  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeCameraMethod() {
+    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeCameraMethod;
     if ((getChangeCameraMethod = SecuritycameraServiceGrpc.getChangeCameraMethod) == null) {
       synchronized (SecuritycameraServiceGrpc.class) {
         if ((getChangeCameraMethod = SecuritycameraServiceGrpc.getChangeCameraMethod) == null) {
           SecuritycameraServiceGrpc.getChangeCameraMethod = getChangeCameraMethod = 
-              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>newBuilder()
+              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService", "changeCamera"))
+                  "SmartBuildingGRPC.SecuritycameraService", "changeCamera"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.stringRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.stringResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SecuritycameraServiceMethodDescriptorSupplier("changeCamera"))
                   .build();
           }
@@ -91,30 +91,30 @@ public final class SecuritycameraServiceGrpc {
      return getChangeCameraMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> getChangeVolumeMethod;
+  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.valueRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.valueResponse> getChangeVolumeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "changeVolume",
-      requestType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest.class,
-      responseType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse.class,
+      requestType = org.DS.gerryproject.SmartFarmingGRPC.valueRequest.class,
+      responseType = org.DS.gerryproject.SmartFarmingGRPC.valueResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> getChangeVolumeMethod() {
-    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> getChangeVolumeMethod;
+  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.valueRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.valueResponse> getChangeVolumeMethod() {
+    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.valueRequest, org.DS.gerryproject.SmartFarmingGRPC.valueResponse> getChangeVolumeMethod;
     if ((getChangeVolumeMethod = SecuritycameraServiceGrpc.getChangeVolumeMethod) == null) {
       synchronized (SecuritycameraServiceGrpc.class) {
         if ((getChangeVolumeMethod = SecuritycameraServiceGrpc.getChangeVolumeMethod) == null) {
           SecuritycameraServiceGrpc.getChangeVolumeMethod = getChangeVolumeMethod = 
-              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse>newBuilder()
+              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.valueRequest, org.DS.gerryproject.SmartFarmingGRPC.valueResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(
-                  "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService", "changeVolume"))
+                  "SmartBuildingGRPC.SecuritycameraService", "changeVolume"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.valueRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.valueResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SecuritycameraServiceMethodDescriptorSupplier("changeVolume"))
                   .build();
           }
@@ -123,30 +123,30 @@ public final class SecuritycameraServiceGrpc {
      return getChangeVolumeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> getOnOffMethod;
+  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.booleanRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> getOnOffMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "onOff",
-      requestType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest.class,
-      responseType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse.class,
+      requestType = org.DS.gerryproject.SmartFarmingGRPC.booleanRequest.class,
+      responseType = org.DS.gerryproject.SmartFarmingGRPC.booleanResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> getOnOffMethod() {
-    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> getOnOffMethod;
+  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.booleanRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> getOnOffMethod() {
+    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.booleanRequest, org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> getOnOffMethod;
     if ((getOnOffMethod = SecuritycameraServiceGrpc.getOnOffMethod) == null) {
       synchronized (SecuritycameraServiceGrpc.class) {
         if ((getOnOffMethod = SecuritycameraServiceGrpc.getOnOffMethod) == null) {
           SecuritycameraServiceGrpc.getOnOffMethod = getOnOffMethod = 
-              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse>newBuilder()
+              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.booleanRequest, org.DS.gerryproject.SmartFarmingGRPC.booleanResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService", "onOff"))
+                  "SmartBuildingGRPC.SecuritycameraService", "onOff"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.booleanRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.booleanResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SecuritycameraServiceMethodDescriptorSupplier("onOff"))
                   .build();
           }
@@ -155,30 +155,30 @@ public final class SecuritycameraServiceGrpc {
      return getOnOffMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeApplianceNameMethod;
+  private static volatile io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeApplianceNameMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "changeApplianceName",
-      requestType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest.class,
-      responseType = org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse.class,
+      requestType = org.DS.gerryproject.SmartFarmingGRPC.stringRequest.class,
+      responseType = org.DS.gerryproject.SmartFarmingGRPC.stringResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-      org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeApplianceNameMethod() {
-    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> getChangeApplianceNameMethod;
+  public static io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+      org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeApplianceNameMethod() {
+    io.grpc.MethodDescriptor<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse> getChangeApplianceNameMethod;
     if ((getChangeApplianceNameMethod = SecuritycameraServiceGrpc.getChangeApplianceNameMethod) == null) {
       synchronized (SecuritycameraServiceGrpc.class) {
         if ((getChangeApplianceNameMethod = SecuritycameraServiceGrpc.getChangeApplianceNameMethod) == null) {
           SecuritycameraServiceGrpc.getChangeApplianceNameMethod = getChangeApplianceNameMethod = 
-              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>newBuilder()
+              io.grpc.MethodDescriptor.<org.DS.gerryproject.SmartFarmingGRPC.stringRequest, org.DS.gerryproject.SmartFarmingGRPC.stringResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraService", "changeApplianceName"))
+                  "SmartBuildingGRPC.SecuritycameraService", "changeApplianceName"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.stringRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse.getDefaultInstance()))
+                  org.DS.gerryproject.SmartFarmingGRPC.stringResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new SecuritycameraServiceMethodDescriptorSupplier("changeApplianceName"))
                   .build();
           }
@@ -216,36 +216,36 @@ public final class SecuritycameraServiceGrpc {
 
     /**
      */
-    public void initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> responseObserver) {
+    public void initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Empty request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getInitialApplianceMethod(), responseObserver);
     }
 
     /**
      */
-    public void changeCamera(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> responseObserver) {
+    public void changeCamera(org.DS.gerryproject.SmartFarmingGRPC.stringRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getChangeCameraMethod(), responseObserver);
     }
 
     /**
      */
-    public void changeVolume(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> responseObserver) {
+    public void changeVolume(org.DS.gerryproject.SmartFarmingGRPC.valueRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.valueResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getChangeVolumeMethod(), responseObserver);
     }
 
     /**
      */
-    public void onOff(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> responseObserver) {
+    public void onOff(org.DS.gerryproject.SmartFarmingGRPC.booleanRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getOnOffMethod(), responseObserver);
     }
 
     /**
      */
-    public void changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> responseObserver) {
+    public void changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.stringRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getChangeApplianceNameMethod(), responseObserver);
     }
 
@@ -255,36 +255,36 @@ public final class SecuritycameraServiceGrpc {
             getInitialApplianceMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty,
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse>(
+                org.DS.gerryproject.SmartFarmingGRPC.Empty,
+                org.DS.gerryproject.SmartFarmingGRPC.cameraResponse>(
                   this, METHODID_INITIAL_APPLIANCE)))
           .addMethod(
             getChangeCameraMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>(
+                org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+                org.DS.gerryproject.SmartFarmingGRPC.stringResponse>(
                   this, METHODID_CHANGE_CAMERA)))
           .addMethod(
             getChangeVolumeMethod(),
             asyncServerStreamingCall(
               new MethodHandlers<
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest,
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse>(
+                org.DS.gerryproject.SmartFarmingGRPC.valueRequest,
+                org.DS.gerryproject.SmartFarmingGRPC.valueResponse>(
                   this, METHODID_CHANGE_VOLUME)))
           .addMethod(
             getOnOffMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest,
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse>(
+                org.DS.gerryproject.SmartFarmingGRPC.booleanRequest,
+                org.DS.gerryproject.SmartFarmingGRPC.booleanResponse>(
                   this, METHODID_ON_OFF)))
           .addMethod(
             getChangeApplianceNameMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest,
-                org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>(
+                org.DS.gerryproject.SmartFarmingGRPC.stringRequest,
+                org.DS.gerryproject.SmartFarmingGRPC.stringResponse>(
                   this, METHODID_CHANGE_APPLIANCE_NAME)))
           .build();
     }
@@ -310,40 +310,40 @@ public final class SecuritycameraServiceGrpc {
 
     /**
      */
-    public void initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> responseObserver) {
+    public void initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Empty request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getInitialApplianceMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void changeCamera(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> responseObserver) {
+    public void changeCamera(org.DS.gerryproject.SmartFarmingGRPC.stringRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(getChangeCameraMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void changeVolume(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> responseObserver) {
+    public void changeVolume(org.DS.gerryproject.SmartFarmingGRPC.valueRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.valueResponse> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(getChangeVolumeMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void onOff(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> responseObserver) {
+    public void onOff(org.DS.gerryproject.SmartFarmingGRPC.booleanRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getOnOffMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request,
-        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> responseObserver) {
+    public void changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.stringRequest request,
+        io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getChangeApplianceNameMethod(), getCallOptions()), request, responseObserver);
     }
@@ -369,37 +369,37 @@ public final class SecuritycameraServiceGrpc {
 
     /**
      */
-    public org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty request) {
+    public org.DS.gerryproject.SmartFarmingGRPC.cameraResponse initialAppliance(org.DS.gerryproject.SmartFarmingGRPC.Empty request) {
       return blockingUnaryCall(
           getChannel(), getInitialApplianceMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> changeCamera(
-        org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request) {
+    public java.util.Iterator<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> changeCamera(
+        org.DS.gerryproject.SmartFarmingGRPC.stringRequest request) {
       return blockingServerStreamingCall(
           getChannel(), getChangeCameraMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse> changeVolume(
-        org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest request) {
+    public java.util.Iterator<org.DS.gerryproject.SmartFarmingGRPC.valueResponse> changeVolume(
+        org.DS.gerryproject.SmartFarmingGRPC.valueRequest request) {
       return blockingServerStreamingCall(
           getChannel(), getChangeVolumeMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse onOff(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest request) {
+    public org.DS.gerryproject.SmartFarmingGRPC.booleanResponse onOff(org.DS.gerryproject.SmartFarmingGRPC.booleanRequest request) {
       return blockingUnaryCall(
           getChannel(), getOnOffMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request) {
+    public org.DS.gerryproject.SmartFarmingGRPC.stringResponse changeApplianceName(org.DS.gerryproject.SmartFarmingGRPC.stringRequest request) {
       return blockingUnaryCall(
           getChannel(), getChangeApplianceNameMethod(), getCallOptions(), request);
     }
@@ -425,24 +425,24 @@ public final class SecuritycameraServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse> initialAppliance(
-        org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.cameraResponse> initialAppliance(
+        org.DS.gerryproject.SmartFarmingGRPC.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getInitialApplianceMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse> onOff(
-        org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.booleanResponse> onOff(
+        org.DS.gerryproject.SmartFarmingGRPC.booleanRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getOnOffMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse> changeApplianceName(
-        org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<org.DS.gerryproject.SmartFarmingGRPC.stringResponse> changeApplianceName(
+        org.DS.gerryproject.SmartFarmingGRPC.stringRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getChangeApplianceNameMethod(), getCallOptions()), request);
     }
@@ -472,24 +472,24 @@ public final class SecuritycameraServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_INITIAL_APPLIANCE:
-          serviceImpl.initialAppliance((org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.Empty) request,
-              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.cameraResponse>) responseObserver);
+          serviceImpl.initialAppliance((org.DS.gerryproject.SmartFarmingGRPC.Empty) request,
+              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.cameraResponse>) responseObserver);
           break;
         case METHODID_CHANGE_CAMERA:
-          serviceImpl.changeCamera((org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest) request,
-              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>) responseObserver);
+          serviceImpl.changeCamera((org.DS.gerryproject.SmartFarmingGRPC.stringRequest) request,
+              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse>) responseObserver);
           break;
         case METHODID_CHANGE_VOLUME:
-          serviceImpl.changeVolume((org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueRequest) request,
-              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.valueResponse>) responseObserver);
+          serviceImpl.changeVolume((org.DS.gerryproject.SmartFarmingGRPC.valueRequest) request,
+              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.valueResponse>) responseObserver);
           break;
         case METHODID_ON_OFF:
-          serviceImpl.onOff((org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanRequest) request,
-              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.booleanResponse>) responseObserver);
+          serviceImpl.onOff((org.DS.gerryproject.SmartFarmingGRPC.booleanRequest) request,
+              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.booleanResponse>) responseObserver);
           break;
         case METHODID_CHANGE_APPLIANCE_NAME:
-          serviceImpl.changeApplianceName((org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringRequest) request,
-              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.stringResponse>) responseObserver);
+          serviceImpl.changeApplianceName((org.DS.gerryproject.SmartFarmingGRPC.stringRequest) request,
+              (io.grpc.stub.StreamObserver<org.DS.gerryproject.SmartFarmingGRPC.stringResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -513,7 +513,7 @@ public final class SecuritycameraServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return org.DS.gerryproject.SmartFarmingGRPC.Securitycamera.getDescriptor();
+      return org.DS.gerryproject.SmartFarmingGRPC.SecuritycameraServiceImpl.getDescriptor();
     }
 
     @java.lang.Override
