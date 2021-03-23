@@ -1,0 +1,50 @@
+syntax = "proto3";
+package org.DS.gerryproject.SmartFarmingGRPC;
+
+service SecuritycameraService{
+  rpc initialAppliance(Empty) returns (cameraResponse) {}
+  
+  rpc changeCamera(stringRequest) returns (stream stringResponse) {}
+  
+  rpc changeVolume(valueRequest) returns (stream valueResponse) {}
+  
+  rpc onOff(booleanRequest) returns (booleanResponse) {}
+  
+  rpc changeApplianceName(stringRequest) returns (stringResponse) {}	
+
+}
+
+message Empty {
+
+}
+
+message stringRequest {
+	string text = 1;
+}
+
+message stringResponse {
+	string text = 1;
+}
+
+message booleanRequest {
+	bool msg = 2;
+}
+
+message booleanResponse {
+	bool msg = 2;
+}
+
+message valueRequest {
+  int32 length = 3;
+}
+
+message valueResponse {
+  int32 length = 3;
+}
+
+message cameraResponse{
+  string aname = 4;
+  string status = 5;
+  string cam = 6;
+  int32 volume = 7;
+}
