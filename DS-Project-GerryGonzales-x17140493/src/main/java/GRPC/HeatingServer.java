@@ -20,11 +20,8 @@ import org.DS.gerryproject.SmartFarmingGRPC.valueResponse;
 
 import io.grpc.stub.StreamObserver;
 
-import com.google.protobuf.Int32ValueOrBuilder;
-
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-import io.grpc.stub.StreamObserver;
 import Models.Heating;
 
 public class HeatingServer extends HeatingServiceImplBase{

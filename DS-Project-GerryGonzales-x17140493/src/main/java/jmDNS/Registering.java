@@ -3,7 +3,6 @@ package jmDNS;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import java.util.HashMap;
 
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceInfo;
@@ -41,11 +40,6 @@ public class Registering {
 			jmdns.registerService(serviceProjector);
 			jmdns.registerService(serviceLight);
 
-			// Wait a bit
-			// Thread.sleep(25000);
-
-			// Unregister all services
-			// jmdns.unregisterAllServices();
 
 		} catch (IOException e) {
 			System.out.println(e.getMessage());

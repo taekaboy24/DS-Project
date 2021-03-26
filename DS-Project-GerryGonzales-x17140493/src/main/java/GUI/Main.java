@@ -45,26 +45,17 @@ import java.awt.Color;
 public class Main {
 	
 	private JFrame frame;
-	private JTextField appliance_name_text;
-	private JTextField appliance_onOff_text;
-	private JTextField appliance_extra_op_text;
-	private JTextField appliance_extra_op2_text;
-	
 	private static SprinklerServiceGrpc.SprinklerServiceBlockingStub sprinkler_blockingStub;
 	private static SprinklerServiceGrpc.SprinklerServiceStub sprinkler_asyncStub;
-	private static SprinklerServiceGrpc.SprinklerServiceFutureStub sprinkler_futureStub;
 	
 	private static LightServiceGrpc.LightServiceBlockingStub light_blockingStub;
 	private static LightServiceGrpc.LightServiceStub light_asyncStub;
-	private static LightServiceGrpc.LightServiceFutureStub light_futureStub;
 	
 	private static HeatingServiceGrpc.HeatingServiceBlockingStub heating_blockingStub;
 	private static HeatingServiceGrpc.HeatingServiceStub heating_asyncStub;
-	private static HeatingServiceGrpc.HeatingServiceFutureStub heating_futureStub;
 	
 	private static SecuritycameraServiceGrpc.SecuritycameraServiceBlockingStub securitycamera_blockingStub;
 	private static SecuritycameraServiceGrpc.SecuritycameraServiceStub securitycamera_asyncStub;
-	private static SecuritycameraServiceGrpc.SecuritycameraServiceFutureStub securitycamera_futureStub;
 	
 	private JTextField sprinklerName_tf;
 	private JTextField heatingName_tf;
@@ -141,25 +132,25 @@ public class Main {
 
 		sprinkler_blockingStub = SprinklerServiceGrpc.newBlockingStub(sprinklerChannel);
 		sprinkler_asyncStub = SprinklerServiceGrpc.newStub(sprinklerChannel);
-		sprinkler_futureStub = SprinklerServiceGrpc.newFutureStub(sprinklerChannel);
+		SprinklerServiceGrpc.newFutureStub(sprinklerChannel);
 		
 		light_blockingStub = LightServiceGrpc.newBlockingStub(lightChannel);
 		light_asyncStub = LightServiceGrpc.newStub(lightChannel);
-		light_futureStub = LightServiceGrpc.newFutureStub(lightChannel);
+		LightServiceGrpc.newFutureStub(lightChannel);
 		
 		heating_blockingStub = HeatingServiceGrpc.newBlockingStub(heatingChannel);
 		heating_asyncStub = HeatingServiceGrpc.newStub(heatingChannel);
-		heating_futureStub = HeatingServiceGrpc.newFutureStub(heatingChannel);
+		HeatingServiceGrpc.newFutureStub(heatingChannel);
 		
 		securitycamera_blockingStub = SecuritycameraServiceGrpc.newBlockingStub(camChannel);
 		securitycamera_asyncStub = SecuritycameraServiceGrpc.newStub(camChannel);
-		securitycamera_futureStub = SecuritycameraServiceGrpc.newFutureStub(camChannel);
+		SecuritycameraServiceGrpc.newFutureStub(camChannel);
 
 	}
 	
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.Green);
+		frame.getContentPane().setBackground(Color.GREEN);
 		frame.setBounds(100, 100, 468, 525);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -233,7 +224,7 @@ public class Main {
 		frame.getContentPane().add(lblBrigtness);
 		
 		//////////////////////
-		//Sprinkler Intensity Buttons
+		//Sprinkler Power Buttons
 		//////////////////////
 		JButton sprinkler_intensityUp_btn = new JButton("+");
 		sprinkler_intensityUp_btn.setFont(new Font("Tahoma", Font.BOLD, 5));
@@ -570,7 +561,7 @@ public class Main {
 		
 		JButton sprinklerRangeDown_btn = new JButton("-");
 		sprinklerRangeDown_btn.setFont(new Font("Tahoma", Font.BOLD, 5));
-		sprinklerRangeDown_btn.setBounds(355, 104, 38, 20);
+		sprinklerRangeDown_btn.setBounds(345, 104, 38, 20);
 		frame.getContentPane().add(sprinklerRangeDown_btn);
 		sprinklerRangeDown_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -581,7 +572,7 @@ public class Main {
 		
 		JButton sprinklerRangeUp_btn = new JButton("+");
 		sprinklerRangeUp_btn.setFont(new Font("Tahoma", Font.BOLD, 5));
-		sprinklerRangeUp_btn.setBounds(391, 104, 38, 20);
+		sprinklerRangeUp_btn.setBounds(381, 104, 38, 20);
 		frame.getContentPane().add(sprinklerRangeUp_btn);
 		sprinklerRangeUp_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -590,7 +581,7 @@ public class Main {
 			}
 		});
 		
-		String[] appNames = {"Select a Camera","Offices", "Garage", "Entrance", "Exit", "Roof", "Stairs" };
+		String[] appNames = {"Select a Camera","Cows Room", "Milking Bay", "Garage", "House", "Entrace", "Exit" };
 		JComboBox appList = new JComboBox(appNames);
 		appList.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		appList.setBounds(345, 194, 86, 20);
